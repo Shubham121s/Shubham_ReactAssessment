@@ -1,0 +1,36 @@
+/* src/App.css */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.player-cards-container {
+  display: flex;
+  justify-content: center; /* Center cards horizontally */
+  gap: 20px; /* Gap between cards */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .player-cards-container {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+

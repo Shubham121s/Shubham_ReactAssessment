@@ -1,0 +1,91 @@
+/* src/BasketballPlayerCard.css */
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .player-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 0;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    position: relative;
+  }
+  
+  .player-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .player-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .player-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .player-position {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .player-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center stats horizontally */
+    margin-top: 20px;
+  }
+  
+  .stat {
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+  
+  .stat-title {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .player-card {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .player-name {
+      font-size: 1.2em;
+    }
+  
+    .player-position {
+      font-size: 1em;
+    }
+  
+    .stat {
+      font-size: 0.9em;
+    }
+  }
+  
